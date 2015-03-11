@@ -1,0 +1,44 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'microsoft yahei',Arial,sans-serif;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+font-family: 'microsoft yahei',Arial,sans-serif;
+  font-size: 4.5em;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  color:#FFF;
+}
+#main {
+  background: url(../image/bk2.jpg) no-repeat center center fixed; 
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  vertical-align: middle;
+}
+#gobangbox{ 
+margin: -15px 5px 5px 5px;
+
+}
+ .gobangblack{ 
+ 	background:url('../image/black.jpg');
+	margin: 0;
+	padding: 0;
+	vertical-align:bottom;
+}
+  .gobangwhite{ background:url('../image/white.jpg');
+margin: 0;
+padding: 0;
+vertical-align:bottom;
+}
+
+.board #restart{font-size: 50px;}
+.board #turn{font-size: 50px;}
