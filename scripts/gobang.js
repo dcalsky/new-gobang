@@ -53,7 +53,19 @@ window.onload=create;
 	}
 }
 function create(){
-
+	/*
+$(window).resize(function(){
+	var body_height=$(document.body).height();
+	var body_width=$(document.body).width();
+	if(body_width>body_height){
+		$("#gobangbox").height(body_height);
+		$("#gobangbox").width($("#gobangbox").height());
+	}else{ 
+		$("#gobangbox").width(body_width);
+		$("#gobangbox").height($("#gobangbox").width()-80);
+	}
+});
+*/
 	 ifwin=0;
 	$("#gobangbox").find("img").click(chess);
 	load();
