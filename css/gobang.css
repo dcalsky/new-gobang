@@ -26,19 +26,19 @@ font-family: 'microsoft yahei',Arial,sans-serif;
 }
 #gobangbox{ 
 margin: -15px 5px 5px 5px;
+border: 2px solid;
 
 }
  .gobangblack{ 
- 	background:url('../image/black.jpg');
-	margin: 0;
-	padding: 0;
-	vertical-align:bottom;
-}
-  .gobangwhite{ background:url('../image/white.jpg');
-margin: 0;
-padding: 0;
-vertical-align:bottom;
 }
 
+  .gobangwhite{ 
+}
+ .gobangblack_new{ 
+}
+  .gobangwhite_new{ 
+}
+.gobang{ 
+}
 .board #restart{font-size: 50px;}
 .board #turn{font-size: 50px;}

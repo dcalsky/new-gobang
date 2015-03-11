@@ -1,5 +1,5 @@
 <?php 
-
+header("Content-Type: text/html; charset=utf-8");
 $con = mysql_connect(SAE_MYSQL_HOST_M.':'.SAE_MYSQL_PORT,SAE_MYSQL_USER,SAE_MYSQL_PASS); 
 if (!$con)
   {
@@ -84,8 +84,8 @@ if (!$con)
   		$rs=mysql_result(mysql_query("select rs from $room where boxid='#' order by id DESC", $con),0);
   		$id=mysql_result(mysql_query("select id from $room order by id DESC", $con),0);
 
-  		if($rs=='2') $ready='ready_ok'; 
-  		else $ready='ready_worry';
+  		if($rs=='2') {$ready='ready_ok';} 
+  		else {$ready='ready_worry';}
 		$mes = array(
 			'boxid' =>$return,
 			'who'=>$who,
