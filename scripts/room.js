@@ -6,6 +6,10 @@ $("#enter").click(enterroom);
 function createroom(){ 
 	var cname=$("#name").val();
 	var croom=$("#room").val();
+	if (/[\u4E00-\u9FA5]/i.test(croom)) {
+    		alert('约定的不输入汉子呢...');
+    		return;
+	}else{
 	   	var data={croom:croom,action:"room_create",cname:cname};
 		$.post("room.php",data,function(data){ 
 		switch(data)
@@ -21,6 +25,7 @@ function createroom(){
 	    		//其他问题处理
 		}
 	});
+}
 }
 
 function enterroom(){
