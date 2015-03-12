@@ -11,7 +11,7 @@ function createroom(){
     		return;
 	}else{
 	   	var data={croom:croom,action:"room_create",cname:cname};
-		$.post("room.php",data,function(data){ 
+		$.post("http://4.tjzzz.sinaapp.com/room.php",data,function(data){ 
 		switch(data)
 		{
 		case "create_ok":
@@ -32,7 +32,7 @@ function enterroom(){
 	var ename=$("#name").val();
 	var eroom=$("#room").val();
    	var data={eroom:eroom,action:"room_enter",ename:ename};
-	$.post("room.php",data,function(data){ 
+	$.post("http://4.tjzzz.sinaapp.com/room.php",data,function(data){ 
 		switch(data)
 	{
 	case "enter_ok_white":
