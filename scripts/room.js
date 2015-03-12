@@ -30,8 +30,12 @@ function enterroom(){
 	$.post("room.php",data,function(data){ 
 		switch(data)
 	{
-	case "enter_ok":
+	case "enter_ok_white":
 		var url="room="+eroom+"&who=white"+"&name="+ename;
+    		window.location.href="box.html?"+url;
+    	break;
+    		case "enter_ok_black":
+		var url="room="+eroom+"&who=black"+"&name="+ename;
     		window.location.href="box.html?"+url;
     	break;
     	case "white":
