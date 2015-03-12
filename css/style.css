@@ -1,0 +1,92 @@
+﻿
+/* general styles */
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'microsoft yahei',Arial,sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+font-family: 'microsoft yahei',Arial,sans-serif;
+}
+
+/* padded section */
+.pad-section {
+  padding: 50px 0;
+}
+/* vertical-centered text */
+.text-vcenter {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.text-vcenter h1 {
+  font-size: 4.5em;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  color:#FFF;
+}
+
+.text-vcenter h3 {
+  color:#FFF;
+}
+
+/* additional sections */
+#home {
+  background: url(../image/home.jpg) no-repeat center center fixed; 
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#create{ 
+font-size: 25px;
+margin: 10px;
+}
+#enter{ 
+font-size: 25px;
+margin: 10px;
+}
+#begin {
+	  background: url(../image/home2.jpg) no-repeat center center fixed; 
+  	  display: table;
+	  height: 50%;
+	  position: relative;
+	  width: 100%;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+}
+#about {
+  background-color: #306d9f;
+  color: #ffffff;
+}
+#about .glyphicon {
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 60px;
+  height: 140px;
+  line-height: 140px;
+  text-align: center;
+  vertical-align: middle;
+  width: 140px;
+}
+
+
+footer {
+  padding: 20px 0;
+}
+footer .glyphicon {
+  color: #333333;
+  font-size: 60px;
+}
+footer .glyphicon:hover {
+  color: #306d9f;
+}
